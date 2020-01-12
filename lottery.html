@@ -1,0 +1,80 @@
+<!DOCTYPE> 
+<html lang="ZH-cn"> 
+    <head>
+        <meta charset="utf-8" >
+        <title>标题</title>
+        <meta name="keywords" content="关键字" /> 
+        <meta name="description" content="网页描述" />
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+    <script src="./lottery.js"></script>
+    </head>
+    <style>
+            *{
+                margin: 0;
+                padding: 0;
+            }
+            ul,ol{
+                list-style: none;
+            }
+            .con{
+                display: flex;
+                /* 换行 默认值nowarp 不换行*/
+                /* 换行 第一行放下面 */
+                /* flex: wrap-reverse; */
+                flex-wrap: wrap;
+     
+                /* 排列方向 */
+                flex-direction: row;
+                /* 交叉轴对齐方式 X */
+                /* align-items:center; */
+                /* 交叉轴对齐方式 Y */
+                justify-content: center;     
+                 /*多跟轴线对齐方式 一根轴线 */
+                 /* align-content:center; */
+            }
+            .con>div{
+                width: 100px;    
+                height: 100px;
+                line-height: 50px;
+                /* color: #FFFFFF;
+                background: green; */
+                text-align: center;
+                border: 1px solid red;
+                /* margin: auto; */
+                justify-content: center;
+                align-items: center;
+                
+                
+            }
+            .active{
+                background-color: pink;
+            }
+    </style>    
+    <body>
+        <div class="con">
+            <div>div1</div>
+            <div>div2</div>
+            <div>div3</div>
+            <div>div4</div>
+            <div class="active">Start</div>
+            <div>div6</div>
+            <div>div7</div>
+            <div>div8</div>
+            <div>div9</div>
+
+        </div>
+        
+        <!-- <script>
+                $("button").tap(function (e){
+                    console.log("单击事件")
+                })
+                $("button").longTap(function (){
+                    console.log("长按事件");
+                })
+                $("div").slideLeft(function (){
+                    console.log("左滑事件");
+                })
+            
+        </script> -->
+    </body>
+</html>
